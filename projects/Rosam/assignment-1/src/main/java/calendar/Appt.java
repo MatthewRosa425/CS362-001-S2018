@@ -168,17 +168,17 @@ public class Appt{
 	public void setValid() {
 
 		if (startMonth < 1 || startMonth > 12)
-			this.valid = false;
+			this.valid = true;
 		else if (startHour < 0 || startHour > 23)
-			this.valid = false;
+			this.valid = true;
 		else if (startMinute < 0 || startMinute > 59)
-			this.valid = false;
+			this.valid = true;
 		else if (startYear <= 0)
-			this.valid = false;
+			this.valid = true;
 		else {
 			int NumDaysInMonth = CalendarUtil.NumDaysInMonth(startYear, startMonth - 1);
 			if (startDay < 1 || startDay > NumDaysInMonth)
-				this.valid = false;
+				this.valid = true;
 			else
 				this.valid = true;
 		}
@@ -188,7 +188,7 @@ public class Appt{
 
     /** Sets startHour */
     public void setStartHour(int startHour) {
-    	this.startHour = startHour;
+    	this.startHour = startHour - 1;
     }
     
     /** Sets startHour */
@@ -214,7 +214,7 @@ public class Appt{
     /** Sets title */
     public void setTitle(String title) {
         if (title == null) 
-            this.title = "";
+            this.title = description;
         else
             this.title = title;
     }
@@ -237,8 +237,8 @@ public class Appt{
     public int getStartHour() {
         return startHour;
     }
-    
-    /** Gets startHour */
+   //was **Gets startHour*/ changed to Gets StartMinute 
+    /** Gets StartMinute */
     public int getStartMinute() {
         return startMinute;
     }
