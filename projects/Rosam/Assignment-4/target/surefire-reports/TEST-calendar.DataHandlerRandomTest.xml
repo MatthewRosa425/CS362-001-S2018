@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="17" failures="3" name="calendar.DataHandlerRandomTest" time="32.967" errors="1" skipped="0">
+<testsuite tests="17" failures="3" name="calendar.DataHandlerRandomTest" time="33.065" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="9.0.4+11"/>
@@ -62,9 +62,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="calendar.DataHandlerRandomTest" name="test00" time="0.1"/>
-  <testcase classname="calendar.DataHandlerRandomTest" name="test01" time="0.177"/>
-  <testcase classname="calendar.DataHandlerRandomTest" name="test02" time="0.013">
+  <testcase classname="calendar.DataHandlerRandomTest" name="test00" time="0.096"/>
+  <testcase classname="calendar.DataHandlerRandomTest" name="test01" time="0.188"/>
+  <testcase classname="calendar.DataHandlerRandomTest" name="test02" time="0.007">
     <failure message="failed to delete appt" type="java.lang.AssertionError">java.lang.AssertionError: failed to delete appt
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -83,7 +83,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:844)
 </failure>
   </testcase>
-  <testcase classname="calendar.DataHandlerRandomTest" name="test03" time="0.002"/>
+  <testcase classname="calendar.DataHandlerRandomTest" name="test03" time="0"/>
   <testcase classname="calendar.DataHandlerRandomTest" name="test04" time="0.003">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
@@ -105,7 +105,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:844)
 </failure>
   </testcase>
-  <testcase classname="calendar.DataHandlerRandomTest" name="test05" time="0.002">
+  <testcase classname="calendar.DataHandlerRandomTest" name="test05" time="0.003">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -126,15 +126,15 @@
 	at java.base/java.lang.Thread.run(Thread.java:844)
 </failure>
   </testcase>
-  <testcase classname="calendar.DataHandlerRandomTest" name="test06" time="0.001"/>
-  <testcase classname="calendar.DataHandlerRandomTest" name="test07" time="0.002"/>
-  <testcase classname="calendar.DataHandlerRandomTest" name="test08" time="0.002"/>
+  <testcase classname="calendar.DataHandlerRandomTest" name="test06" time="0.003"/>
+  <testcase classname="calendar.DataHandlerRandomTest" name="test07" time="0"/>
+  <testcase classname="calendar.DataHandlerRandomTest" name="test08" time="0.005"/>
   <testcase classname="calendar.DataHandlerRandomTest" name="test09" time="0.002"/>
-  <testcase classname="calendar.DataHandlerRandomTest" name="test10" time="0.014"/>
-  <testcase classname="calendar.DataHandlerRandomTest" name="test11" time="0.045"/>
-  <testcase classname="calendar.DataHandlerRandomTest" name="test12" time="0.016"/>
-  <testcase classname="calendar.DataHandlerRandomTest" name="test13" time="0.034"/>
-  <testcase classname="calendar.DataHandlerRandomTest" name="test14" time="0.007">
+  <testcase classname="calendar.DataHandlerRandomTest" name="test10" time="0.015"/>
+  <testcase classname="calendar.DataHandlerRandomTest" name="test11" time="0.041"/>
+  <testcase classname="calendar.DataHandlerRandomTest" name="test12" time="0.015"/>
+  <testcase classname="calendar.DataHandlerRandomTest" name="test13" time="0.157"/>
+  <testcase classname="calendar.DataHandlerRandomTest" name="test14" time="0.013">
     <error message="Second date specified is not before the first date specified." type="calendar.DateOutOfRangeException">calendar.DateOutOfRangeException: Second date specified is not before the first date specified.
 	at calendar.DataHandler.getApptRange(DataHandler.java:143)
 	at calendar.DataHandlerRandomTest.test14(DataHandlerRandomTest.java:520)
@@ -152,6 +152,6 @@
 	at java.base/java.lang.Thread.run(Thread.java:844)
 </error>
   </testcase>
-  <testcase classname="calendar.DataHandlerRandomTest" name="test15" time="0.029"/>
-  <testcase classname="calendar.DataHandlerRandomTest" name="radnomtest" time="32.518"/>
+  <testcase classname="calendar.DataHandlerRandomTest" name="test15" time="0.013"/>
+  <testcase classname="calendar.DataHandlerRandomTest" name="radnomtest" time="32.504"/>
 </testsuite>

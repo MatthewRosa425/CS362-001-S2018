@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: calendar.DataHandlerRandomTest
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 32.971 sec <<< FAILURE!
-test02(calendar.DataHandlerRandomTest)  Time elapsed: 0.013 sec  <<< FAILURE!
+Tests run: 17, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 33.073 sec <<< FAILURE!
+test02(calendar.DataHandlerRandomTest)  Time elapsed: 0.007 sec  <<< FAILURE!
 java.lang.AssertionError: failed to delete appt
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -40,7 +40,7 @@ java.lang.AssertionError
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-test05(calendar.DataHandlerRandomTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+test05(calendar.DataHandlerRandomTest)  Time elapsed: 0.003 sec  <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -60,7 +60,7 @@ java.lang.AssertionError
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-test14(calendar.DataHandlerRandomTest)  Time elapsed: 0.007 sec  <<< ERROR!
+test14(calendar.DataHandlerRandomTest)  Time elapsed: 0.013 sec  <<< ERROR!
 calendar.DateOutOfRangeException: Second date specified is not before the first date specified.
 	at calendar.DataHandler.getApptRange(DataHandler.java:143)
 	at calendar.DataHandlerRandomTest.test14(DataHandlerRandomTest.java:520)
